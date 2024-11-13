@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary: #fff;
+    --seco: #D2D2D2;
+    --accent: #F57E57;
+}
+
+
+
+.form{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--primary);
+    width: 30vw;
+    min-height: 50vh;
+}
+
+.login-form{
+    min-height: 30vh;
+}
+
+.inputBox{
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.inputBox input{
+    flex: 1;
+    padding: 7px;
+    background-color: transparent;
+    align-items: center;
+    border: 0;
+    outline: 0;
+}
+
+.btnBig{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--primary);
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-property: width;
+    transition: transform 0.2s;
+}
+
+.btnBig:hover{
+    /* width: 300px; */
+    transform: scale(102%);
+}
+
+.btnNormal{
+    min-width: 130px;
+    padding: 10px;
+    background-color: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.gridItems{
+    width: 100%;
+    padding: 0px 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.gridItems .note{
+    background-color: #f4f4f4;
+    padding: 10px;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+
+.checkbox.active{
+    background-color: #F57E57;
+}
